@@ -72,6 +72,26 @@ body {
   margin: 0 auto;
 }
 
+.brand-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  text-align: left;
+}
+
+.brand-mark {
+  width: 64px;
+  height: 64px;
+  flex: 0 0 auto;
+  display: block;
+}
+
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .eyebrow {
   margin: 0 0 10px;
   font-size: 0.75rem;
@@ -133,48 +153,6 @@ body {
   background: rgba(255, 255, 255, 0.92);
 }
 
-.form-actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 16px 18px;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.14);
-}
-
-.form-note {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.92rem;
-  line-height: 1.5;
-  max-width: 640px;
-}
-
-.signin-button {
-  appearance: none;
-  border: 1px solid rgba(15, 23, 42, 0.14);
-  border-radius: 9999px;
-  background: #0f172a;
-  color: #fff;
-  padding: 10px 16px;
-  font: inherit;
-  font-size: 0.92rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
-}
-
-.signin-button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.16);
-}
-
-.signin-button:focus-visible {
-  outline: 3px solid rgba(59, 130, 246, 0.35);
-  outline-offset: 2px;
-}
-
 .form-wrap iframe {
   display: block;
   width: 100%;
@@ -194,17 +172,24 @@ body {
 }
 
 @media (max-width: 799px) {
+  .brand-lockup {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .brand-copy {
+    align-items: center;
+  }
+
+  .brand-mark {
+    width: 56px;
+    height: 56px;
+  }
+
   .banner-wrap,
   .form-wrap {
     margin-top: 28px;
-  }
-
-  .form-actions {
-    padding: 14px;
-  }
-
-  .signin-button {
-    width: 100%;
   }
 
   .form-wrap iframe {
