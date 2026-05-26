@@ -30,12 +30,25 @@
       </section>
 
       <section class="form-wrap" aria-label="Google form section">
+        <div class="form-actions">
+          <p class="form-note">If Google asks you to sign in, use the popup helper below. Sign in there, then come back to this page and the form will refresh automatically.</p>
+          <a
+            class="signin-button"
+            id="signinPopupButton"
+            href="https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSd3f8PWCGRct_jpiqt5tOqyt_8boeZ9pxXtkyboOEgcbBAhYg%2Fviewform%3Fembedded%3Dtrue"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open sign-in popup
+          </a>
+        </div>
         <iframe
+          id="hiringFormFrame"
           src="https://docs.google.com/forms/d/e/1FAIpQLSd3f8PWCGRct_jpiqt5tOqyt_8boeZ9pxXtkyboOEgcbBAhYg/viewform?embedded=true"
           title="Adniko Hiring Form"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          sandbox="allow-forms allow-scripts allow-same-origin"
+          sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
         >
           Loading…
         </iframe>
