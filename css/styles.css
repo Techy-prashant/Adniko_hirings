@@ -80,8 +80,8 @@ body {
 }
 
 .brand-mark {
-  width: 64px;
-  height: 64px;
+  width: 88px;
+  height: 88px;
   flex: 0 0 auto;
   display: block;
 }
@@ -117,6 +117,17 @@ body {
   font-weight: 800;
   letter-spacing: -0.05em;
   color: #020617;
+  white-space: nowrap;
+}
+
+.headline-primary,
+.headline-comma,
+.headline-break {
+  display: inline;
+}
+
+.headline-comma {
+  margin-right: 0.18em;
 }
 
 .subheadline {
@@ -183,8 +194,20 @@ body {
   }
 
   .brand-mark {
-    width: 56px;
-    height: 56px;
+    width: 62px;
+    height: 62px;
+  }
+
+  .headline {
+    white-space: normal;
+  }
+
+  .headline-comma {
+    display: none;
+  }
+
+  .headline-break {
+    display: block;
   }
 
   .banner-wrap,
